@@ -244,3 +244,24 @@ section .section-title{
 .footer-text a{
     text-decoration: underline;
 }
+
+
+/* MOBILE SUPPORT */
+@media only screen and (max-width: 600px) {
+    .extra-list .extra{
+        width:100%;
+    }
+    
+    .proj .proj-details{
+        width:100%;
+    }
+    
+    .workex .details{
+        width:70%;
+    }
+    
+    .proj .proj-tech .badge{
+        margin-bottom:5px;    
+    }
+    
+}
