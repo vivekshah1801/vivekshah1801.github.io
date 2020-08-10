@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER SECTION */
+
+.yellow{
+    background-color:#fbbd33;
+}
+
+header{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+header h1{
+    font-weight: 700;
+    font-size: 67px;
+}
+
+header h3{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+header .subtext{
+    padding-top:20px;
+}
+
+header .header-button{
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 8px;
+    padding-left:11px;
+    padding-right:11px;
+    font-weight: 500;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {
+        opacity:1;
+    }
+}
+
+header .header-button:hover{
+    background-color: black;
+    color:white;
+    animation: fadeIn ease 0.4s;
+}
+
+header .social-icon{
+    width:35px;
+    margin-right:4px;
+}
+
+header .social-icon-group{
+    padding-top:5px;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.ghostwhite{
+    background-color: #f7f8fa;
+}
+
+.darkghostwhite{
+    background-color: #e5e5e5;
+}
+
+
+.mediummarine{
+    background-color: #4ebfa1;
+}
+
+.slategray{
+    background-color: #374252;
+}
+
+section{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+section .section-title{
+    border-bottom-right-radius: 20px;
+    border-bottom: 2px solid #374252;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+
+/* WORKEX SECTION */
+
+.workex{
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+
+.workex p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.workex .company{
+    font-weight: 600;
+}
+
+.workex .timeline{
+    font-size:16px;
+    font-style: italic;
+}
+
+.workex .position{
+    font-weight: 400;
+}
+
+.workex .details{
+    width:70%;
+    font-size: 16px;
+    word-break: keep-all;
+    color: #636f80;
+}
+
+/* TECH SKILL SECTION */
+.tech{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.tech .skill-title{
+    font-weight: 600;
+    text-align: right
+;}
+
+@media only screen and (max-width: 600px) {
+    .tech .skill-title {
+        text-align: left;
+    }
+}
+
+/* WORKEX SECTION */
+
+.proj{
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+
+.proj p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.proj .proj-title{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.proj .proj-details{
+    width:70%;
+    font-size: 18px;
+    word-break: keep-all;
+    color: #636f80;
+}
+
+.proj .proj-tech{
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.proj .proj-tech .badge{
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.proj .proj-tech .badge:hover{
+    color: #007bff;
+    background-color: transparent;
+    cursor: default;
+}
+
+/* EDUCATION SECTION */
+
+.education{
+    padding-bottom: 20px;
+}
+
+.education p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.education .insti,.percentage{
+    color: #374252;
+} 
+
+.education .course{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.extra-list .extra{
+    width:80%;
+    color: #374252;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.connect-list .connect{
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: underline;
+    padding: 2px 0px;
+}
+
+.connect-list .connect a{
+    color:#374252;
+}
+
+.connect-list .connect a:hover{
+    font-weight: bold;
+    font-style: italic;
+}
+
+#footer{
+    padding:10px;
+}
+
+.footer-text{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+
+.footer-text a{
+    text-decoration: underline;
+}
