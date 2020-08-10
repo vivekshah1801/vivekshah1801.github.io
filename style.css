@@ -264,4 +264,7 @@ section .section-title{
         margin-bottom:5px;    
     }
     
+    header{
+        padding-top: 60px;
+    }
 }
