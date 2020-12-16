@@ -36,8 +36,8 @@
                     <p class="subtext">
                         I am a final-year computer engineering student at Dharmsinh Desai University. 
                         I am into software development, with inclination towards backend technologies.
-                        I am good in python and node. I like to discuss about technologies and startups. 
-                        I am learning about Software Development, Machine Learning, Data Analytics, System Design and everything else that interests me, one bit at a time.
+                        I am good in python and node. I like to discuss about technologies and startups. Had been working with and for 4+ startups. 
+                        I am learning about Software Development, Data Analytics, System Design and everything else that interests me, one bit at a time.
                     </p>
 
                     <div class="social-icon-group">
@@ -164,11 +164,38 @@
 
             <div class="proj-list">
                 <div class="proj">
+                    <p class="proj-title">Meet Power Ups - Chrome Extension</p>
+                    <p class="proj-details">
+                        Meet Power Ups is a chrome extension that let's you share images directly in the google meet meeting. Google meet doesn't support media sharing unlike zoom.
+                        Using this extension you can share the photos with just a key press. simple, easy and well-integrated into the google meet. Uses firebase for storing the media. Used javascript browser APIs for detection of new messages. 
+                        <br>Project page: <a href="https://devpost.com/software/meet-powerups">Meet Power Up's Devpost submission</a> 
+                    </p>
+                    <p class="proj-tech">
+                        <span class="badge badge-primary">Javascript</span> 
+                        <span class="badge badge-primary">Firebase</span>
+                        <span class="badge badge-primary">Mutation Observer</span>
+                        <span class="badge badge-primary">Browser Extension</span>
+                    </p>
+                </div>
+
+                <!-- <div class="proj">
+                    <p class="proj-title">MakeItSafe.space - NSFW Discord Bot</p>
+                    <p class="proj-details">
+                        A simple discord bot that checks every message and media for any NSFW content and if anything not appropriate is present it deletes it. Discord.js is used to implement the bot functionality. Used perspective API for text moderation and NSFW.js for media moderation. Project won second overall prize at Hack, Camera, Hacktion!.
+                        <br>Project page: <a href="https://devpost.com/software/test-l2paqz">MakeItSafe.space's Devpost submission</a> 
+                    </p>
+                    <p class="proj-tech">
+                        <span class="badge badge-primary">Discord Bot</span> 
+                        <span class="badge badge-primary">NSFW.js</span>
+                        <span class="badge badge-primary">Discord.js</span>
+                    </p>
+                </div> -->
+
+                <div class="proj">
                     <p class="proj-title">EarlyBird - Assignments Reminder</p>
                     <p class="proj-details">
                         Django Based web application that reminds you about upcoming assignment deadlines. 
-                        I Used django model forms. Authentication is done using allauth. Used bootstrap for frontend designing. 
-                        Deployed @ <a href="https://earlybird.ml" target="_blank">earlybird.ml</a></p>
+                        I Used django model forms. Authentication is done using allauth. Used bootstrap for frontend designing.
                     <p class="proj-tech">
                         <span class="badge badge-primary">Django</span> 
                         <span class="badge badge-primary">AllAuth</span>
@@ -311,12 +338,12 @@
                     Apart from tech, I like writing, reading and watching web series.
                     <br>My Writings can be read on: <a href="https://www.yourquote.in/vivek-shah-jjld/quotes" target="_blank">Vivek's Quotes</a>
                     <br>My Favorite Book is: The Kite Runner by <i>Khaled Hosseini</i>
-                    <br>My Favorite Web Series is: Kota Factory by <i>TVF</i> 
+                    <br>My Favorite Web Series is: Kota Factory by <i>TVF</i>
                 </div>
 
                 <div class="extra">
                     If you have a business idea or want to discuss something related to tech, drop me a mail
-                    at vivekshah9969@gmail.com
+                    at vivekshah9969@gmail.com.
                 </div>
             </div>
     </section>
@@ -339,6 +366,9 @@
                     <a href="mailto:vivekshah9969@gmail.com" target="_blank">Gmail</a>
                 </div>
                 <div class="connect">
+                    <a href="https://devpost.com/vivekshah1801" target="_blank">Devpost</a>
+                </div>
+                <div class="connect">
                     <a href="https://www.instagram.com/vivekshah1801/" target="_blank">Instagram</a>
                 </div>
             </div>
@@ -346,9 +376,13 @@
 
     <section id="footer" class="darkghostwhite">
         <div class="footer-text text-center">
-            &copy; 2020 | <a href="https://github.com/vivekshah1801" target="_blank" class="text-dark">Vivek Shah</a>
+            &copy; <span id="year">2020</span> | <a href="https://github.com/vivekshah1801" target="_blank" class="text-dark">Vivek Shah</a>
         </div>
     </section>
+
+    <script>
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
