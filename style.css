@@ -265,6 +265,11 @@ section .section-title{
     color: #636f80;
 }
 
+.back_to_main{
+    color: #636f80;
+    font-weight: 600;
+}
+
 /* MOBILE SUPPORT */
 @media only screen and (max-width: 600px) {
     .extra-list .extra{
