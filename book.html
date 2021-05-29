@@ -1,0 +1,87 @@
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173903540-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173903540-2');
+    </script>
+
+    <title>Vivek Shah - Books I have read</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Vivek Shah's Personal Site.">
+    <meta name="keywords" content="Vivek Shah, Website, Startup, Tech, Business">
+    <meta name="author" content="Vivek Shah">
+
+    <link rel="icon" href="icons/favicon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="fluid-container">
+    <header class="yellow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <h1 style="font-size: 50px">Books I have read - Vivek</h1>
+                    <h3 style="font-weight: 400; font-size: 18px;line-height: 1.5em;">I like to spend my free time reading books and watching webseries. Here is the list of some books which I have read and enjoyed. <i>The Kite Runner</i> is the book which I like the most. If you have some suggestions on what I should read next, shoot it up at vivekshah9969@gmail.com. </h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="fluid-container ghostwhite">
+        <div class="container">
+            <i class="disclaimer">*This page is work in progress.</i>
+        </div>
+    </div>
+
+    <section class="ghostwhite" style="padding-top: 15px;">
+        <div class="container" id="book_list">
+        </div>
+    </section>
+
+    <section id="footer" class="darkghostwhite">
+        <div class="footer-text text-center">
+            &copy; <span id="year">2021</span> | <a href="https://github.com/vivekshah1801" target="_blank" class="text-dark">Vivek Shah</a>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+
+    <script>
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            let book_html = ""
+            const book_container = document.getElementById('book_list')
+            if (xhr.readyState === 4){
+                book_list = JSON.parse(xhr.responseText)
+                for(let book of book_list){
+                    book_html = `
+                    <div class="book">
+                        <div class="title">${book.title}</div>
+                        <div class="info">
+                            <span class="genre">${book.genre}</span>
+                            <span class="mobile_break">By</span>
+                            <span class="author"><i>${book.author}</i></span>
+                        </div>
+                    </div>
+
+                    `
+                    book_container.innerHTML += book_html
+                }
+            }
+        };
+        xhr.open('GET', '/books.json');
+        xhr.send();
+    </script>
+</body>

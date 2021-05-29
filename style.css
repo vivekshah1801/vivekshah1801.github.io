@@ -217,19 +217,20 @@ section .section-title{
     font-size: 18px;
 }
 
-.connect-list .connect{
+.connect-list .connect {
     font-family: 'Roboto Mono', monospace;
-    text-decoration: underline;
+    color:#374252;
     padding: 2px 0px;
 }
 
 .connect-list .connect a{
+    text-decoration: underline;
     color:#374252;
 }
 
 .connect-list .connect a:hover{
-    font-weight: bold;
     font-style: italic;
+    text-decoration: underline;
 }
 
 #footer{
@@ -245,6 +246,24 @@ section .section-title{
     text-decoration: underline;
 }
 
+.disclaimer{
+    line-height: 50px;
+}
+
+#book_list .book{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#book_list .book .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#book_list .book .info{
+    font-size: 18px;
+    color: #636f80;
+}
 
 /* MOBILE SUPPORT */
 @media only screen and (max-width: 600px) {
@@ -266,5 +285,13 @@ section .section-title{
     
     header{
         padding-top: 60px;
+    }
+
+    .mobile_break{
+        display: block;
+    }
+
+    .connect{
+        margin-top: 20px;
     }
 }
