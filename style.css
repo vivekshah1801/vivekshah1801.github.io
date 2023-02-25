@@ -56,17 +56,6 @@ header .header-button:hover{
     animation: fadeIn ease 0.4s;
 }
 
-header .social-icon{
-    width:35px;
-    margin-right:4px;
-}
-
-header .social-icon-group{
-    padding-top:5px;
-    padding-bottom: 20px;
-    display: none;
-}
-
 .ghostwhite{
     background-color: #f7f8fa;
 }
